@@ -1,0 +1,109 @@
+.card {
+  &.medicare-coverage-options {
+    padding: 30px;
+    margin-bottom: 50px;
+    .plan-coverages {
+      border-bottom: 1px solid $brand-gray-4;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      h2,h3,h4 {
+        margin-top: 0px;
+      }
+      p {
+        display: inline;
+
+        @media (max-width: $screen-xs-max) {
+          display: block;
+        }
+      }
+      .plan-status {
+        display: inline;
+        padding: 0 0 10px 0;
+
+        @media (max-width: $screen-xs-max) {
+          display: block;
+        }
+        p {
+          display: inline;
+
+          &.coverage-type {
+            display: inline;
+            font-family: $font-family-base-strong;
+            font-size: $font-size-h5;
+            color: $gray-darker;
+          }
+        }
+        img {
+          display: inline;
+          padding: 0 0 0 10px;
+
+          @media (max-width: $screen-sm-max) {
+            padding: 0px;
+          }
+        }
+      }
+    }
+
+    .plan-detail {
+      padding: 0 0 20px 0;
+      p {
+        font-family: $font-family-base-strong;
+        &.plan-label {
+          font-size: $font-size-h5;
+          color: $gray-darker;
+          margin: 0 0 5px;
+          @media (max-width: $screen-xs-max) {
+            margin: 15px 0 0;
+          }
+        }
+        &.plan-data {
+          display: inline;
+          font-size: $font-size-h3;
+          color: $brand-violet;
+          @media (max-width: $screen-xs-max) {
+            font-size: $m-font-size-h3;
+          }
+        }
+        &.plan-description {
+          display: inline;
+          font-family: $font-family-base;
+        }
+      }
+    }
+    
+    .plan-cost-estimate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: $brand-gray-6;
+      p {
+        margin: 0px;
+        font-size: $font-size-h5;
+        color: $gray-darker;
+        font-family: $font-family-base-strong;
+        @media (max-width: $screen-xs-max) {
+          text-align: center;
+        }
+        span {
+          color: $brand-violet;
+        }
+      }
+    }
+    .plan-cta {
+      padding: 20px 0px 0px 0px;
+      text-align: right;
+      a + .btn {
+        margin-left: 15px;
+        @media (max-width: $screen-sm-max) {
+          margin-left: 5px;
+        }
+      }
+      span {
+        @media (max-width: $screen-xs-max) {
+          display: none;
+        }
+      }
+    }
+  }
+}
